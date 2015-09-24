@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>59A03313-F1A0-4761-9CDF-C1C228C01534</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>31BB924A76022D1A3465B2941EBF3F98E026FB6A</key>
+		<string>github.com:songzhiming/SzmEncryptTool.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SzmEncryptTool/SzmEncryptTool.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>31BB924A76022D1A3465B2941EBF3F98E026FB6A</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:songzhiming/SzmEncryptTool.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>31BB924A76022D1A3465B2941EBF3F98E026FB6A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>31BB924A76022D1A3465B2941EBF3F98E026FB6A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SzmEncryptTool</string>
+		</dict>
+	</array>
+</dict>
+</plist>

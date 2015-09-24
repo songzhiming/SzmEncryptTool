@@ -16,7 +16,6 @@
 		E7EF54841BB2923C00E8B6C1 /* SzmEncryptToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EF54831BB2923C00E8B6C1 /* SzmEncryptToolTests.m */; };
 		E7EF54961BB2946000E8B6C1 /* Md5.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EF54951BB2946000E8B6C1 /* Md5.m */; };
 		E7EF54991BB2948800E8B6C1 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EF54981BB2948800E8B6C1 /* RSA.m */; };
-		E7EF54A21BB2995500E8B6C1 /* Base64Util.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EF549C1BB2995500E8B6C1 /* Base64Util.m */; };
 		E7EF54A31BB2995500E8B6C1 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EF549E1BB2995500E8B6C1 /* GTMBase64.m */; };
 		E7EF54A71BB2999600E8B6C1 /* DES.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EF54A61BB2999600E8B6C1 /* DES.m */; };
 /* End PBXBuildFile section */
@@ -49,8 +48,6 @@
 		E7EF54951BB2946000E8B6C1 /* Md5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Md5.m; sourceTree = "<group>"; };
 		E7EF54971BB2948800E8B6C1 /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
 		E7EF54981BB2948800E8B6C1 /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
-		E7EF549B1BB2995500E8B6C1 /* Base64Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Util.h; sourceTree = "<group>"; };
-		E7EF549C1BB2995500E8B6C1 /* Base64Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64Util.m; sourceTree = "<group>"; };
 		E7EF549D1BB2995500E8B6C1 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
 		E7EF549E1BB2995500E8B6C1 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
 		E7EF549F1BB2995500E8B6C1 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
@@ -171,8 +168,6 @@
 		E7EF549A1BB2995500E8B6C1 /* Encryption */ = {
 			isa = PBXGroup;
 			children = (
-				E7EF549B1BB2995500E8B6C1 /* Base64Util.h */,
-				E7EF549C1BB2995500E8B6C1 /* Base64Util.m */,
 				E7EF549D1BB2995500E8B6C1 /* GTMBase64.h */,
 				E7EF549E1BB2995500E8B6C1 /* GTMBase64.m */,
 				E7EF549F1BB2995500E8B6C1 /* GTMDefines.h */,
@@ -285,7 +280,6 @@
 				E7EF546D1BB2923C00E8B6C1 /* AppDelegate.m in Sources */,
 				E7EF54961BB2946000E8B6C1 /* Md5.m in Sources */,
 				E7EF54A71BB2999600E8B6C1 /* DES.m in Sources */,
-				E7EF54A21BB2995500E8B6C1 /* Base64Util.m in Sources */,
 				E7EF546A1BB2923C00E8B6C1 /* main.m in Sources */,
 				E7EF54A31BB2995500E8B6C1 /* GTMBase64.m in Sources */,
 			);
