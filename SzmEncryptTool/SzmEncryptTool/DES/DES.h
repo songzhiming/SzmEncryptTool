@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
 @interface DES : NSObject
 +(NSString*) decryptUseDES:(NSString*)cipherText key:(NSString*)key;
 +(NSString*) encryptUseDES:(NSString *)clearText key:(NSString *)key;
++(NSString*) encryptImageUseDES:(UIImage *)image key:(NSString *)key;
 @end

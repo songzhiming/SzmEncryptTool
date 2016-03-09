@@ -25,6 +25,8 @@
     NSString *MD5Str = [Md5 getMd5_32Bit_String:@"ABC"];
     NSString *RSAStr = [RSA encryptString:@"ABC" publicKey:RSAPUBLICKEY];
     NSString *DESStr = [DES encryptUseDES:@"ABC" key:@"123"];
+    NSString *DESImageStr = [DES encryptImageUseDES:[UIImage imageNamed:@"gifIcon"] key:@"123"];
+    NSLog(@"DESimagestr==%@",DESImageStr);
     NSLog(@"MD5Str====%@",MD5Str);
     NSLog(@"RSAStr====%@",RSAStr);
     NSLog(@"DESStr====%@",DESStr);

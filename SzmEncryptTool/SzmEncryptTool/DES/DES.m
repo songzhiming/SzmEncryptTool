@@ -10,6 +10,7 @@
 #import "GTMBase64.h"
 #include <CommonCrypto/CommonCryptor.h>
 
+
 @implementation DES
 +(NSString*) decryptUseDES:(NSString*)cipherText key:(NSString*)key {
     // 利用 GTMBase64 解碼 Base64 字串
@@ -42,6 +43,37 @@
 +(NSString *) encryptUseDES:(NSString *)clearText key:(NSString *)key
 {
     NSData *data = [clearText dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
+    unsigned char buffer[1024];
+    memset(buffer, 0, sizeof(char));
+    size_t numBytesEncrypted = 0;
+    
+    CCCryptorStatus cryptStatus = CCCrypt(kCCEncrypt,
+                                          kCCAlgorithmDES,
+                                          kCCOptionPKCS7Padding| kCCOptionECBMode,
+                                          [key UTF8String],
+                                          kCCKeySizeDES,
+                                          nil,
+                                          [data bytes],
+                                          [data length],
+                                          buffer,
+                                          1024,
+                                          &numBytesEncrypted);
+    
+    NSString* plainText = nil;
+    if (cryptStatus == kCCSuccess) {
+        NSData *dataTemp = [NSData dataWithBytes:buffer length:(NSUInteger)numBytesEncrypted];
+        plainText = [GTMBase64 stringByEncodingData:dataTemp];
+    }else{
+        NSLog(@"DES加密失败");
+    }
+    return plainText;
+}
+
+//des加密
++(NSString *) encryptImageUseDES:(UIImage *)image key:(NSString *)key
+{
+    NSData *data = UIImageJPEGRepresentation(image, 0.3);
+//    NSData *data = [clearText dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
     unsigned char buffer[1024];
     memset(buffer, 0, sizeof(char));
     size_t numBytesEncrypted = 0;
